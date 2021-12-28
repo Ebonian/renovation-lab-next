@@ -9,13 +9,13 @@ export default function Auth() {
 
   const router = useRouter();
 
-  useEffect(() => {
-    if (session?.email) {
-      router.push("/");
-    }
+  // useEffect(() => {
+  //   if (session?.email) {
+  //     router.push("/");
+  //   }
 
-    setErr("");
-  }, [session]);
+  //   setErr("");
+  // }, [session]);
 
   return (
     <div className="flex justify-center md:justify-between w-full h-screen bg-banner1 bg-cover bg-bottom font-athiti">
