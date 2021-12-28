@@ -1,21 +1,9 @@
 import { useContext, useEffect } from "react";
-import { useRouter } from "next/router";
 import { Context } from "../context/main";
 import Link from "next/link";
 
 export default function Auth() {
-  const { setEmail, setPassword, login, session, err, setErr } =
-    useContext(Context);
-
-  const router = useRouter();
-
-  // useEffect(() => {
-  //   if (session?.email) {
-  //     router.push("/");
-  //   }
-
-  //   setErr("");
-  // }, [session]);
+  const { setEmail, setPassword, login, err } = useContext(Context);
 
   return (
     <div className="flex justify-center md:justify-between w-full h-screen bg-banner1 bg-cover bg-bottom font-athiti">
