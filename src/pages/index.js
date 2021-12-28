@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function index({ documents }) {
+export default function Index({ documents }) {
   // console.log(documents);
   const { session, logout } = useContext(Context);
 

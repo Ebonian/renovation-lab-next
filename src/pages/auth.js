@@ -4,17 +4,8 @@ import { Context } from "../context/main";
 import Link from "next/link";
 
 export default function Auth() {
-  const {
-    setEmail,
-    setPassword,
-    email,
-    password,
-    login,
-    logout,
-    session,
-    err,
-    setErr,
-  } = useContext(Context);
+  const { setEmail, setPassword, login, session, err, setErr } =
+    useContext(Context);
 
   const router = useRouter();
 
