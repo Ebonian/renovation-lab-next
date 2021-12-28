@@ -31,9 +31,9 @@ export default function Index({ documents }) {
       <p>acc</p>
       <p>{session?.email}</p>
       <p onClick={logout}>logout</p>
-      <Link href="/auth">
+      {/* <Link href="/auth">
         <a>login</a>
-      </Link>
+      </Link> */}
       <br />
       <Link href="/baiorghor">
         <a>baiorghor</a>
