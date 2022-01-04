@@ -1,5 +1,4 @@
 import { useContext, useEffect } from "react";
-import { useRouter } from "next/router";
 import { Context } from "../context/main";
 import Link from "next/link";
 
@@ -17,14 +16,6 @@ export const getStaticProps = async () => {
 export default function Home({ documents }) {
   // console.log(documents);
   const { session, logout } = useContext(Context);
-
-  const router = useRouter();
-
-  // useEffect(() => {
-  //   if (!session) {
-  //     router.push("/auth");
-  //   }
-  // }, [session]);
 
   return (
     <div>

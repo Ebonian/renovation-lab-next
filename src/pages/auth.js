@@ -1,9 +1,9 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Context } from "../context/main";
 import Link from "next/link";
 
 export default function Auth() {
-  const { setEmail, setPassword, login, err } = useContext(Context);
+  const { setEmail, setPassword, login, err, session } = useContext(Context);
 
   return (
     <div className="flex justify-center md:justify-between w-full h-screen bg-banner1 bg-cover bg-bottom font-athiti">

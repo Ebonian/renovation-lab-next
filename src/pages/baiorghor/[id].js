@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useContext, useEffect } from "react";
 import { Context } from "../../context/main";
 
@@ -34,17 +33,6 @@ export const getStaticProps = async (context) => {
 };
 
 export default function BaiorghorID({ document }) {
-  console.log(document);
-  const { session } = useContext(Context);
-
-  // auth checking
-  // const router = useRouter();
-  // useEffect(() => {
-  //   if (!session) {
-  //     router.push("/auth");
-  //   }
-  // }, [session]);
-
   // id checking
   return (
     <div>
