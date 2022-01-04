@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useContext, useEffect } from "react";
 import { Context } from "../../context/main";
 
@@ -16,14 +15,6 @@ export const getStaticProps = async () => {
 
 export default function Baiorghor({ documents }) {
   const { session, checkIsTodayDate, mergeTodayProp } = useContext(Context);
-
-  // auth checking
-  // const router = useRouter();
-  // useEffect(() => {
-  //   if (!session) {
-  //     router.push("/auth");
-  //   }
-  // }, [session]);
 
   // today date checking
   const allCreatedDates = documents.map((x) => x.createdAt);
